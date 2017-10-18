@@ -1,0 +1,142 @@
+.b-header
+  height 170px
+  transition( all 0.5s ease )
+  font-weight 400
+  background-color #fff
+    
+  @media( max-width 767px )
+    height 70px
+  
+  &.i-fixed
+    height 170px
+    width 100%
+    
+  &-bg
+    text-align center
+    
+    img
+      height auto
+  
+  &__container
+    width auto
+    background-color #fff
+    
+    .i-fixed &
+      position fixed
+      top 0
+      left 0
+      width 100%
+      z-index 995
+    
+    @media( max-width 767px )
+      height 70px
+      
+  .row
+    margin-bottom 0
+    margin-right -15px
+    margin-left -15px
+        
+  &__body
+    padding 45px 0
+    
+    .i-fixed &
+      padding 15px 0 14px
+  
+    @media( max-width 767px )
+      padding 15px 0 14px
+      
+      .b-header__tel
+        margin-top 8px
+        
+        img
+          vertical-align top
+        
+      .b-header__tel img
+        width 100%
+    
+  
+  &__logo
+    text-align center
+    display block
+    transition( all 0.5s ease )
+    
+    .i-fixed &
+      height 35px
+    
+    img
+      height 66px
+      width 230px
+      vertical-align top
+      transition( all 0.5s ease )
+    
+      .i-fixed &
+        height 35px
+        width 122px
+        margin-top 4px
+    
+    @media( max-width 767px )
+      height auto
+      margin-top 1px
+    
+      .i-fixed &
+        margin-top 1px
+      
+      img
+        height 35px
+        width 122px
+        height auto
+        
+        .i-fixed &
+          margin-top 0
+  
+  &__tel
+    font-size 13.5pt
+    margin-top 28px
+    display block
+    transition( all 0.5s ease )
+    
+    i
+      font-style normal
+      color #666666
+      font-size 8pt
+    
+    .i-fixed &
+      font-size 11pt
+      margin-top 6px
+      transition( all 0.5s ease )
+      
+      @media( max-width 767px )
+        margin-top 8px
+    
+    img
+      width 24px
+      height 24px
+      vertical-align top
+      transition( all 0.5s ease )
+    
+  &__menu
+    padding-top 28px
+    transition( all 0.5s ease )
+    text-align right
+    
+    span
+      color #004294
+      font-size 13.5pt
+    
+    img
+      width 24px
+      height 24px
+      vertical-align top
+      transition( all 0.5s ease )
+    
+    .i-fixed &
+      padding-top 6px
+      
+    @media( max-width 767px )
+    
+      &,
+      .i-fixed &
+        padding-top 9px
+  
+.b-footer
+  font-family "Helvetica Neue",Helvetica,Arial,sans-serif

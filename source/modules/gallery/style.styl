@@ -1,0 +1,64 @@
+@import '../../styl/component-include.styl'
+
+.b-gallery
+  
+  &-img
+    background-repeat no-repeat
+    background-position center
+    background-size cover
+    height 574px
+    text-align center
+    padding-top 407px
+
+.b-gallery .fotorama
+    
+  &__nav__frame.fotorama__active .fotorama__dot
+    background-color #fff !important
+    border-width 1px !important
+    
+  &__nav-wrap
+    position relative
+    
+  &__nav--dots
+    position absolute !important
+    width 100% !important
+    bottom 0
+    height 55px
+    
+  &__dot
+    border-color #fff !important
+    width 7px !important
+    height 7px !important
+    border-radius 5px !important
+    
+  &__nav--dots .fotorama__nav__frame
+    width 17px
+    
+  .fotorama__arr
+    width 63px
+    height 63px
+    background-size cover
+    margin-top -31px
+  
+  .fotorama__arr--prev
+    background embedurl( 'img/arrow-left.svg' ) no-repeat center
+  
+  .fotorama__arr--next
+    background embedurl( 'img/arrow-right.svg' ) no-repeat center
+    
+.fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows
+  .fotorama__fullscreen-icon:not(:focus),
+  .fotorama__arr--prev:not(:focus),
+  .fotorama__arr--next:not(:focus)
+    transform( none !important )
+
+.fotorama__wrap--css3.fotorama__wrap--video
+  .fotorama__fullscreen-icon,
+  .fotorama__arr--prev,
+  .fotorama__arr--next
+    transform( none !important )
+    
+.fotorama__nav:before,
+.fotorama__stage:before
+  display none !important
+      

@@ -1,0 +1,47 @@
+﻿//Этот блок не надо интегрировать
+#bx-panel-back( style="height: 20px; background-color: yellow;" )
+#bx-panel.bx-panel-fixed( style="height: 20px; background-color: yellow;" )
+  a#bx-panel__toggle
+    span.on Закрепить
+    span.off Открепить
+script
+  | (function($) { "use strict"; $(function() { $( '#bx-panel__toggle' ).click( function(e) { e.preventDefault(); $( '#bx-panel' ).toggleClass( 'bx-panel-fixed' ); $( '#bx-panel-back' ).toggle( !$( '#bx-panel-back' ).is( ':visible' )) }); }); })(jQuery);
+style
+  | #bx-panel__toggle { display: block; text-align: center; } #bx-panel #bx-panel__toggle .on { display: block; cursor: pointer; } #bx-panel #bx-panel__toggle .off { display: none; cursor: pointer; } #bx-panel.bx-panel-fixed #bx-panel__toggle .on { display: none; } #bx-panel.bx-panel-fixed #bx-panel__toggle .off { display: block; } #bx-panel.bx-panel-fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 995; }
+//Конец блока, который не надо интегрировать
+
+header.b-header
+
+  .b-header__container
+  
+    .b-header__body
+    
+      .container
+        
+        .row( itemscope itemtype="http://schema.org/Organization" )
+        
+          .col-md-4.col-sm-2.col-xs-2.b-header__menu
+            span.hidden-sm.hidden-xs( itemprop="name" ) Веллнес журнал
+            a.visible-sm.visible-xs.b-header__menu-icon( href="" data-activates="slide-out" )
+              img( src="/template/images/svg/menu.svg" alt="" )
+          
+          .col-md-4.col-sm-8.col-xs-8.text-center
+            a.b-header__logo( href="/" )
+              img( src="/upload/wellcom-logo.gif" itemprop="logo" alt="" )
+              
+          .col-md-4.col-sm-2.col-xs-2
+             .b-header__tel
+                span.hidden-sm.hidden-xs <span itemprop="telephone" content="+79296440080" >+7 929 644 00 80</span><br><i itemprop="openingHours">с 11:00 до 19:00</i>
+                a.visible-sm.visible-xs( href="tel:+79296440080" itemprop="telephone" content="+79296440080" )
+                  img( src="/template/images/svg/phone.svg" alt="" )
+              
+
+
+#slide-out.side-nav
+
+  .side-nav__item
+    a( href='/catalog/section/' ) Световые технологии
+  .side-nav__item
+    a( href='/catalog/section/' ) Дизайнерам
+  .side-nav__item
+    a( href='/catalog/section/' ) О компании
