@@ -13,6 +13,14 @@ a
     opacity .7
     text-decoration underline
     
+h1
+  font-size 26pt
+  margin 0 0 35px
+  
+h2
+  font-size 17pt
+  font-weight bold
+    
 h3
   font-size 12pt
   font-weight bold
@@ -27,6 +35,15 @@ hr
     width 33%
     margin 22px auto
     border 1px solid #0c73b2
+    
+  &.i-line
+    border-top 1px solid #ececec
+    
+  &.i-size-M
+    margin 35px 0
+    
+  &.i-size-L
+    margin 50px 0
   
 //materialize
   
@@ -54,6 +71,7 @@ hr
   padding 0 40px
   display inline-block
   background-color #339999
+  transition( background-color 0.2s ease )
   
   a&:hover
     text-decoration none
@@ -68,3 +86,10 @@ hr
     background-color #6eb5b5
     color #fff
   
+.b-social-icon
+  display inline-block
+  width 32px
+  height 32px
+  background-repeat no-repeat
+  background-position center
+  background-size cover

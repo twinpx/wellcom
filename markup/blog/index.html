@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog | wellcom</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/template/template_styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One:100,300,400,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/template/jscript.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'xzw6fwr',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+  </head>
+  <body>
+    <!--Этот блок не надо интегрировать-->
+    <div id="bx-panel-back" style="height: 20px; background-color: yellow;"></div>
+    <div id="bx-panel" style="height: 20px; background-color: yellow;" class="bx-panel-fixed"><a id="bx-panel__toggle"><span class="on">Закрепить</span><span class="off">Открепить</span></a></div>
+    <script>(function($) { "use strict"; $(function() { $( '#bx-panel__toggle' ).click( function(e) { e.preventDefault(); $( '#bx-panel' ).toggleClass( 'bx-panel-fixed' ); $( '#bx-panel-back' ).toggle( !$( '#bx-panel-back' ).is( ':visible' )) }); }); })(jQuery);</script>
+    <style>#bx-panel__toggle { display: block; text-align: center; } #bx-panel #bx-panel__toggle .on { display: block; cursor: pointer; } #bx-panel #bx-panel__toggle .off { display: none; cursor: pointer; } #bx-panel.bx-panel-fixed #bx-panel__toggle .on { display: none; } #bx-panel.bx-panel-fixed #bx-panel__toggle .off { display: block; } #bx-panel.bx-panel-fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 995; }</style>
+    <!--Конец блока, который не надо интегрировать-->
+    <header class="b-header">
+      <div class="b-header__container">
+        <div class="b-header__body">
+          <div class="container">
+            <div itemscope itemtype="http://schema.org/Organization" class="row">
+              <div class="col-md-4 col-sm-2 col-xs-2 b-header__menu"><span itemprop="name" class="hidden-sm hidden-xs">Веллнес журнал</span><a href="" data-activates="slide-out" class="visible-sm visible-xs b-header__menu-icon"><img src="/template/images/svg/menu.svg" alt=""></a></div>
+              <div class="col-md-4 col-sm-8 col-xs-8 text-center"><a href="/" class="b-header__logo"><img src="/upload/wellcom-logo.gif" itemprop="logo" alt=""></a></div>
+              <div class="col-md-4 col-sm-2 col-xs-2">
+                <div class="b-header__tel"><span class="hidden-sm hidden-xs"><span itemprop="telephone" content="+79296440080" >+7 929 644 00 80</span><br><i itemprop="openingHours">с 11:00 до 19:00</i></span><a href="tel:+79296440080" itemprop="telephone" content="+79296440080" class="visible-sm visible-xs"><img src="/template/images/svg/phone.svg" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="slide-out" class="side-nav">
+      <div class="side-nav__item"><a href="/catalog/section/">Световые технологии</a></div>
+      <div class="side-nav__item"><a href="/catalog/section/">Дизайнерам</a></div>
+      <div class="side-nav__item"><a href="/catalog/section/">О компании</a></div>
+    </div>
+    <div class="container">
+      <!-- start /components/blog/-->
+      <link rel="stylesheet" href="/components/blog/style.css">
+      <script src="/components/blog/script.js"></script>
+      <div itemscope itemtype="http://schema.org/Blog" class="b-blog">
+        <h1>Веллнес журнал</h1>
+        <hr class="i-size-L i-line">
+        <div itemscope itemtype="http://schema.org/blogPost" class="row">
+          <div class="col-sm-6"><a href="" class="b-blog__img"><img src="/upload/blog/1.jpg" data-original="/upload/blog/1.jpg" alt="" itemprop="image" class="lazyload"></a></div>
+          <div class="col-sm-6">
+            <h2><a href="" itemprop="name">Rehab Fitness Matrix BASE 1</a></h2>
+            <div itemprop="text">
+              <p>Программа Rehab Fitness Matrix представляет собой уникальное сочетание - персональный подход к тренировкам клиентов с учетом особенностей их осанки, реализуемый в групповом формате. Базовый курс Rehab Fitness Matrix – это первая ступень освоения знаний, необходимых для применения в групповых программах принципов и методик, используемых в персональном формате коррекционных тренировок.</p>
+            </div>
+          </div>
+        </div>
+        <hr class="i-size-L i-line">
+        <div itemscope itemtype="http://schema.org/blogPost" class="row">
+          <div class="col-sm-6"><a href="" class="b-blog__img"><img src="/upload/blog/2.jpg" data-original="/upload/blog/2.jpg" alt="" itemprop="image" class="lazyload"></a></div>
+          <div class="col-sm-6">
+            <h2><a href="" itemprop="name">Здоровый позвоночник. Групповая тренировка</a></h2>
+            <div itemprop="text">
+              <p>Программа Rehab Fitness Matrix представляет собой уникальное сочетание - персональный подход к тренировкам клиентов с учетом особенностей их осанки, реализуемый в групповом формате..</p>
+            </div>
+          </div>
+        </div>
+        <hr class="i-size-L i-line">
+        <div itemscope itemtype="http://schema.org/blogPost" class="row">
+          <div class="col-sm-6"><a href="" class="b-blog__img"><img src="/upload/blog/3.jpg" data-original="/upload/blog/3.jpg" alt="" itemprop="image" class="lazyload"></a></div>
+          <div class="col-sm-6">
+            <h2><a href="" itemprop="name">Практикум: Реабилитационный фитнес при межпозвонковых грыжах в шейном отделе</a></h2>
+            <div itemprop="text">
+              <p>Программа Rehab Fitness Matrix представляет собой уникальное сочетание - персональный подход к тренировкам клиентов с учетом особенностей их осанки, реализуемый в групповом формате..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end /components/blog/-->
+      <hr class="i-size-L i-line">
+      <div class="b-paginator"><a href="">1</a><a href="">2</a><a href="">3</a><span>4</span><a href="">5</a><a href="">6</a><span class="b-paginator__dots">&hellip;</span><a href="">56</a></div>
+      <hr class="i-size-L i-line">
+    </div>
+    <footer class="b-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="b-footer__link"><a href="" class="b-footer__link-image"><img src="/template/images/footer/ymaps.png" alt=""></a><a href="" class="b-footer__link-text">Посмотреть в приложении Яндекс Карты</a></div>
+          </div>
+          <div class="col-sm-3">
+            <div class="b-footer__link"><a href="" class="b-footer__link-image"><img src="/template/images/footer/ynav.png" alt=""></a><a href="" class="b-footer__link-text">Проложить маршрут Яндекс Навигатор</a></div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-3"><a href="" target="_blank" style="background-image: url( '/template/images/svg/facebook.svg' );" class="b-social-icon"></a><a href="" target="_blank" style="background-image: url( '/template/images/footer/youtube.png' );" class="b-social-icon"></a><a href="" target="_blank" style="background-image: url( '/template/images/svg/vk.svg' );" class="b-social-icon"></a></div>
+        </div>
+        <hr class="i-size-M">
+        <div class="row">
+          <div class="col-sm-3">© Веллнес компания «Велком» — мы делаем реабилитационный фитнес вашей профессией.</div>
+          <div class="col-sm-3">
+            <p>Пн-пт 11:00-19:00<br>Сб-вс выходной</p>
+            <p>ул. Мневники, д.3, к.1, Москва, Россия, 123308.</p>
+          </div>
+          <div class="col-sm-3">
+            <p class="b-footer-phone">(929) 644-00-80 </p>
+            <p><a href="mailto:mail@wellcomclub.ru">mail@wellcomclub.ru</a></p>
+          </div>
+          <div class="col-sm-3">Сайт создан в Twin px 2017</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

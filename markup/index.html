@@ -81,7 +81,7 @@
           <div class="col-lg-6">
             <div class="b-blocks-item">
               <div class="row">
-                <div class="col-sm-6"><a href="" class="b-blocks-item__img"><img src="/upload/block/1.jpg" alt="" class="lazyload"></a></div>
+                <div class="col-sm-6"><a href="" class="b-blocks-item__img"><img src="/upload/block/1.jpg" data-original="/upload/block/1.jpg" alt="" class="lazyload"></a></div>
                 <div class="col-sm-6 b-blocks-item__text">
                   <h3><a href="">Групповые программы Rehab Fitness Matrix</a></h3>
                   <hr class="i-decor">
@@ -94,7 +94,7 @@
           <div class="col-lg-6">
             <div class="b-blocks-item">
               <div class="row">
-                <div class="col-sm-6"><a href="" class="b-blocks-item__img"><img src="/upload/block/2.jpg" alt="" class="lazyload"></a></div>
+                <div class="col-sm-6"><a href="" class="b-blocks-item__img"><img src="/upload/block/2.jpg" data-original="/upload/block/2.jpg" alt="" class="lazyload"></a></div>
                 <div class="col-sm-6 b-blocks-item__text">
                   <h3><a href="">Кабинет Функциональной Диагностики!</a></h3>
                   <hr class="i-decor">
@@ -109,7 +109,7 @@
           <div class="col-lg-6">
             <div class="b-blocks-item">
               <div class="row">
-                <div class="col-sm-6"><a href="" class="b-blocks-item__img"><img src="/upload/block/3.jpg" alt="" class="lazyload"></a></div>
+                <div class="col-sm-6"><a href="" class="b-blocks-item__img"><img src="/upload/block/3.jpg" data-original="/upload/block/3.jpg" alt="" class="lazyload"></a></div>
                 <div class="col-sm-6 b-blocks-item__text">
                   <h3><a href="">Программа АРМ Фитнесс врач</a></h3>
                   <hr class="i-decor">
@@ -122,7 +122,7 @@
           <div class="col-lg-6">
             <div class="b-blocks-item">
               <div class="row">
-                <div class="col-sm-6"><a href="" class="b-blocks-item__img"><img src="/upload/block/4.jpg" alt="" class="lazyload"></a></div>
+                <div class="col-sm-6"><a href="" class="b-blocks-item__img"><img src="/upload/block/4.jpg" data-original="/upload/block/4.jpg" alt="" class="lazyload"></a></div>
                 <div class="col-sm-6 b-blocks-item__text">
                   <h3><a href="">Расписание обучение в 2016 году</a></h3>
                   <hr class="i-decor">
@@ -140,11 +140,11 @@
           <div class="col-lg-2 col-sm-4 col-xs-6">
             <div class="b-facts-item">
               <div class="b-facts-item__num">7 500</div>
-              <p>Студентов прошли обучение в Wellcom.</p><img src="/upload/facts/1.jpg" alt="" class="lazyload">
+              <p>Студентов прошли обучение в Wellcom.</p><img src="/upload/facts/1.jpg" data-original="/upload/facts/1.jpg" alt="" class="lazyload">
             </div>
           </div>
           <div class="col-lg-2 col-sm-4 col-xs-6">
-            <div class="b-facts-item"><img src="/upload/facts/2.jpg" alt="" class="lazyload">
+            <div class="b-facts-item"><img src="/upload/facts/2.jpg" data-original="/upload/facts/2.jpg" alt="" class="lazyload">
               <div class="b-facts-item__num">
                 3 500
                  <span>руб</span>
@@ -156,12 +156,12 @@
           <div class="col-lg-2 col-sm-4 col-xs-6">
             <div class="b-facts-item">
               <div class="b-facts-item__num">37</div>
-              <p>Клубов оснащены диагностическим оборудованием.</p><img src="/upload/facts/3.jpg" alt="" class="lazyload">
+              <p>Клубов оснащены диагностическим оборудованием.</p><img src="/upload/facts/3.jpg" data-original="/upload/facts/3.jpg" alt="" class="lazyload">
             </div>
           </div>
           <hr class="visible-md visible-sm clearfix">
           <div class="col-lg-2 col-sm-4 col-xs-6">
-            <div class="b-facts-item"><img src="/upload/facts/4.jpg" alt="" class="lazyload">
+            <div class="b-facts-item"><img src="/upload/facts/4.jpg" data-original="/upload/facts/4.jpg" alt="" class="lazyload">
               <div class="b-facts-item__num">
                 24
                  <span>руб</span>
@@ -173,11 +173,11 @@
           <div class="col-lg-2 col-sm-4 col-xs-6">
             <div class="b-facts-item">
               <div class="b-facts-item__num">50</div>
-              <p>Авторских курсов.</p><img src="/upload/facts/5.jpg" alt="" class="lazyload">
+              <p>Авторских курсов.</p><img src="/upload/facts/5.jpg" data-original="/upload/facts/5.jpg" alt="" class="lazyload">
             </div>
           </div>
           <div class="col-lg-2 col-sm-4 col-xs-6">
-            <div class="b-facts-item"><img src="/upload/facts/6.jpg" alt="" class="lazyload">
+            <div class="b-facts-item"><img src="/upload/facts/6.jpg" data-original="/upload/facts/6.jpg" alt="" class="lazyload">
               <div class="b-facts-item__num">
                 75
                  <span>руб</span>
@@ -189,12 +189,37 @@
       </div>
       <hr>
     </div>
+    <script src="https://api-maps.yandex.ru/1.1/index.xml"></script>
+    <script>
+      YMaps.jQuery(function () {
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+        map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 10);
+      })
+    </script>
+    <div id="YMapsID" style="width:100%; height:400px;"></div>
     <footer class="b-footer">
-      <div class="b-container">
-        <div class="b-row">
-          <div class="b-col-sm-4"></div>
-          <div class="b-col-sm-4"></div>
-          <div class="b-col-sm-4"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="b-footer__link"><a href="" class="b-footer__link-image"><img src="/template/images/footer/ymaps.png" alt=""></a><a href="" class="b-footer__link-text">Посмотреть в приложении Яндекс Карты</a></div>
+          </div>
+          <div class="col-sm-3">
+            <div class="b-footer__link"><a href="" class="b-footer__link-image"><img src="/template/images/footer/ynav.png" alt=""></a><a href="" class="b-footer__link-text">Проложить маршрут Яндекс Навигатор</a></div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-3"><a href="" target="_blank" style="background-image: url( '/template/images/svg/facebook.svg' );" class="b-social-icon"></a><a href="" target="_blank" style="background-image: url( '/template/images/footer/youtube.png' );" class="b-social-icon"></a><a href="" target="_blank" style="background-image: url( '/template/images/svg/vk.svg' );" class="b-social-icon"></a></div>
+        </div>
+        <hr class="i-size-M">
+        <div class="row">
+          <div class="col-sm-3">© Веллнес компания «Велком» — мы делаем реабилитационный фитнес вашей профессией.</div>
+          <div class="col-sm-3">
+            <p>Пн-пт 11:00-19:00<br>Сб-вс выходной</p>
+            <p>ул. Мневники, д.3, к.1, Москва, Россия, 123308.</p>
+          </div>
+          <div class="col-sm-3">
+            <p class="b-footer-phone">(929) 644-00-80 </p>
+            <p><a href="mailto:mail@wellcomclub.ru">mail@wellcomclub.ru</a></p>
+          </div>
+          <div class="col-sm-3">Сайт создан в Twin px 2017</div>
         </div>
       </div>
     </footer>
