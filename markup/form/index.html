@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Form | wellcom</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/template/template_styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One:100,300,400,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/template/jscript.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'xzw6fwr',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+  </head>
+  <body>
+    <!--Этот блок не надо интегрировать-->
+    <div id="bx-panel-back" style="height: 20px; background-color: yellow;"></div>
+    <div id="bx-panel" style="height: 20px; background-color: yellow;" class="bx-panel-fixed"><a id="bx-panel__toggle"><span class="on">Закрепить</span><span class="off">Открепить</span></a></div>
+    <script>(function($) { "use strict"; $(function() { $( '#bx-panel__toggle' ).click( function(e) { e.preventDefault(); $( '#bx-panel' ).toggleClass( 'bx-panel-fixed' ); $( '#bx-panel-back' ).toggle( !$( '#bx-panel-back' ).is( ':visible' )) }); }); })(jQuery);</script>
+    <style>#bx-panel__toggle { display: block; text-align: center; } #bx-panel #bx-panel__toggle .on { display: block; cursor: pointer; } #bx-panel #bx-panel__toggle .off { display: none; cursor: pointer; } #bx-panel.bx-panel-fixed #bx-panel__toggle .on { display: none; } #bx-panel.bx-panel-fixed #bx-panel__toggle .off { display: block; } #bx-panel.bx-panel-fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 995; }</style>
+    <!--Конец блока, который не надо интегрировать-->
+    <header class="b-header">
+      <div class="b-header__container">
+        <div class="b-header__body">
+          <div class="container">
+            <div itemscope itemtype="http://schema.org/Organization" class="row">
+              <div class="col-md-4 col-sm-2 col-xs-2 b-header__menu"><a href="" itemprop="name" class="hidden-sm hidden-xs">Веллнес журнал</a><a href="" data-activates="slide-out" class="visible-sm visible-xs b-header__menu-icon"><img src="/template/images/svg/menu.svg" alt=""></a></div>
+              <div class="col-md-4 col-sm-8 col-xs-8 text-center"><a href="/" class="b-header__logo"><img src="/upload/wellcom-logo.gif" itemprop="logo" alt=""></a></div>
+              <div class="col-md-4 col-sm-2 col-xs-2">
+                <div class="b-header__tel"><span class="hidden-sm hidden-xs"><span itemprop="telephone" content="+79296440080" >+7 929 644 00 80</span><br><i itemprop="openingHours">с 11:00 до 19:00</i></span><a href="tel:+79296440080" itemprop="telephone" content="+79296440080" class="visible-sm visible-xs"><img src="/template/images/svg/phone.svg" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="slide-out" class="side-nav">
+      <div class="side-nav__item"><a href="/catalog/section/">Световые технологии</a></div>
+      <div class="side-nav__item"><a href="/catalog/section/">Дизайнерам</a></div>
+      <div class="side-nav__item"><a href="/catalog/section/">О компании</a></div>
+    </div>
+    <div class="container">
+      <hr class="i-size-M">
+      <div class="text-center">
+        <h1>Отправить заявку</h1>
+        <p>Заполните форму и отправьте, мы получим Вашу заявку и свяжемся с Вами.</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <form name="SIMPLE_FORM_1" action="/form/?elemid=1&amp;elemname=%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0&amp;elemurl=%2F111%2F" method="POST" enctype="multipart/form-data">
+            <input id="sessid" type="hidden" name="sessid" value="14de4914f140f27b84a31bd622c37812">
+            <input type="hidden" name="WEB_FORM_ID" value="1">
+            <input name="web_form_submit" value="Сохранить" type="hidden" class="validate">
+            <input type="hidden" name="form_text_3" value="1">
+            <input type="hidden" name="form_text_4" value="Название элемента">
+            <input type="hidden" name="form_text_5" value="/111/">
+            <input type="hidden" name="form_textarea_9" value="1;Название элемента;/111/">
+            <input id="email" name="email" type="text" style="display:none;">
+            <div class="input-field">
+              <input id="name1" name="form_text_1" type="text" required="" class="validate">
+              <label for="name1">Фамилия и имя</label>
+            </div>
+            <div class="input-field">
+              <input id="name2" name="form_text_2" type="text" required="" class="validate">
+              <label for="name2">Телефон</label>
+            </div>
+            <div class="input-field">
+              <input id="name6" name="form_text_6" type="text" required="" class="validate">
+              <label for="name6">Email</label>
+            </div>
+            <div class="input-field">
+              <input id="name7" name="form_text_7" type="text" required="" class="validate">
+              <label for="name7">Дата проведения</label>
+            </div>
+            <div class="input-field">
+              <textarea id="name8" name="form_textarea_8" rows="5" class="materialize-textarea"></textarea>
+              <label for="name8">Комментарий</label>
+            </div>
+            <hr>
+            <p class="text-center">
+              Отправляя форму, Вы даете согласие на
+               <a href="">обработку персональных данных</a>
+            </p>
+            <hr class="i-size-M">
+            <div class="b-form-button text-center">
+              <button type="submit" class="b-button">Отправить</button>
+            </div>
+          </form>
+          <hr>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <footer class="b-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="b-footer__link"><a href="" class="b-footer__link-image"><img src="/template/images/footer/ymaps.png" alt=""></a><a href="" class="b-footer__link-text">Посмотреть в приложении Яндекс Карты</a></div>
+          </div>
+          <div class="col-sm-3">
+            <div class="b-footer__link"><a href="" class="b-footer__link-image"><img src="/template/images/footer/ynav.png" alt=""></a><a href="" class="b-footer__link-text">Проложить маршрут Яндекс Навигатор</a></div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-3"><a href="" target="_blank" style="background-image: url( '/template/images/svg/facebook.svg' );" class="b-social-icon"></a><a href="" target="_blank" style="background-image: url( '/template/images/footer/youtube.png' );" class="b-social-icon"></a><a href="" target="_blank" style="background-image: url( '/template/images/svg/vk.svg' );" class="b-social-icon"></a></div>
+        </div>
+        <hr class="i-size-M">
+        <div class="row">
+          <div class="col-sm-3">© Веллнес компания «Велком» — мы делаем реабилитационный фитнес вашей профессией.</div>
+          <div class="col-sm-3">
+            <p>Пн-пт 11:00-19:00<br>Сб-вс выходной</p>
+            <p>ул. Мневники, д.3, к.1, Москва, Россия, 123308.</p>
+          </div>
+          <div class="col-sm-3">
+            <p class="b-footer-phone">(929) 644-00-80 </p>
+            <p><a href="mailto:mail@wellcomclub.ru">mail@wellcomclub.ru</a></p>
+          </div>
+          <div class="col-sm-3">Сайт создан в Twin px 2017</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
