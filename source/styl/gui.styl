@@ -79,10 +79,12 @@ hr
   transition( background-color 0.2s ease )
   border none
   
-  a&:hover
+  a&:hover,
+  a&:focus
     text-decoration none
     opacity 1
     color #fff
+    outline none
     
   &:hover
     background-color #2c8686
@@ -110,6 +112,9 @@ hr
       
   .b-form-button &
     min-width 262px
+    
+    &:focus
+      outline none
   
 .b-social-icon
   display inline-block
