@@ -19,7 +19,7 @@
   
   &__container
     width auto
-    background-color #fff
+    background-color #f4f4f4
     
     .i-fixed &
       position fixed
@@ -37,7 +37,7 @@
     margin-left -15px
         
   &__body
-    padding 45px 0
+    padding 22px 0 0
     
     .i-fixed &
       padding 15px 0 14px
@@ -91,9 +91,10 @@
   
   &__tel
     font-size 13.5pt
-    margin-top 28px
+    margin-top 21px
     display block
     transition( all 0.5s ease )
+    line-height 1.2
     
     i
       font-style normal
@@ -115,14 +116,30 @@
       transition( all 0.5s ease )
     
   &__menu
-    padding-top 28px
+    padding-top 23px
     transition( all 0.5s ease )
-    text-align right
+    display flex
+    align-items center
+    
+    .b-header a&-link
+      display none
+      
+    .i-fixed.b-header a&-link
+      display inline-block
+    
+    &-span
+      
+      .i-fixed &
+        display none
     
     span,
     a
-      color #004294
-      font-size 13.5pt
+      line-height 1.2
+      display inline-block
+      font-size 10.5pt
+      
+      .i-fixed &
+        font-size 8.5pt
     
     img
       width 24px
@@ -131,13 +148,47 @@
       transition( all 0.5s ease )
     
     .i-fixed &
-      padding-top 6px
+      padding-top 8px
       
     @media( max-width 767px )
     
       &,
       .i-fixed &
         padding-top 9px
+        
+  &__top-menu
+    text-align center
+    overflow hidden
+    font-size 10.5pt
+    border-top 1px solid #eeeeee
+    height 62px
+    padding 10px 0
+    margin-top 20px
+    display flex
+    justify-content center
+    align-items center
+    flex-wrap wrap
+    
+    a
+      display inline-block
+      margin 0 20px
+      white-space nowrap
+      line-height 1.2
+      
+    .i-fixed &
+      display none
+      
+  &__menu-icon
+  
+    @media( min-width 992px )
+      margin-right 35px
+    
+      .b-header:not(.i-fixed) &
+        display none
+        
+.header-block
+  color #afafaf
+  font-size 9pt
   
 .b-footer
   color #5e7b84

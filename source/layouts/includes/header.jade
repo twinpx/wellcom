@@ -21,19 +21,28 @@ header.b-header
         .row( itemscope itemtype="http://schema.org/Organization" )
         
           .col-md-4.col-sm-2.col-xs-2.b-header__menu
-            a.hidden-sm.hidden-xs( href="" itemprop="name" ) Веллнес журнал
-            a.visible-sm.visible-xs.b-header__menu-icon( href="" data-activates="slide-out" )
+            a.b-header__menu-icon( href="" data-activates="slide-out" )
               img( src="/template/images/svg/menu.svg" alt="" )
+            span.b-header__menu-span.hidden-sm.hidden-xs( itemprop="name" ) Профессиональное<br>веллнес обучение
+            a.b-header__menu-link.hidden-sm.hidden-xs( href="" itemprop="name" ) Расписание обучения
           
           .col-md-4.col-sm-8.col-xs-8.text-center
             a.b-header__logo( href="/" )
-              img( src="/upload/wellcom-logo.gif" itemprop="logo" alt="" )
+              img( src="/upload/wellcom-logo.png" itemprop="logo" alt="" )
               
-          .col-md-4.col-sm-2.col-xs-2
+          .col-md-4.col-sm-2.col-xs-2.text-right
              .b-header__tel
                 span.hidden-sm.hidden-xs <span itemprop="telephone" content="+79296440080" >+7 929 644 00 80</span><br><i itemprop="openingHours">с 11:00 до 19:00</i>
                 a.visible-sm.visible-xs( href="tel:+79296440080" itemprop="telephone" content="+79296440080" )
                   img( src="/template/images/svg/phone.svg" alt="" )
+                  
+        .b-header__top-menu.hidden-sm.hidden-xs
+          a( href="" ) Расписание обучения
+          a( href="" ) Дистанционное обучение
+          a( href="" ) Оборудование
+          a( href="" ) Тестирование
+          a( href="" ) Корпоративные программы
+          a( href="" ) Программа «Фитнес-врач»
               
 
 

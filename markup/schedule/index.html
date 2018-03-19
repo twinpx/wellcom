@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Form | wellcom</title>
+    <title>Schedule | Wellcom</title>
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -56,62 +56,72 @@
       <div class="side-nav__item"><a href="/catalog/section/">О компании</a></div>
     </div>
     <div class="container">
-      <div class="b-offer-table">
-        <table class="striped">
-          <thead>
-            <tr>
-              <th>План</th>
-              <th>Free</th>
-              <th>Start</th>
-              <th>Pro</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Стоимость в квартал</th>
-              <td>0</td>
-              <td>8 000</td>
-              <td>18 000</td>
-            </tr>
-            <tr>
-              <th>Постеры для печати</th>
-              <td><i class="material-icons">close</i></td>
-              <td style="background-color: pink;"><i class="material-icons">close</i></td>
-              <td><i class="material-icons">check</i></td>
-            </tr>
-            <tr>
-              <th>Банер для соцсетей</th>
-              <td><i class="material-icons">check</i></td>
-              <td><i class="material-icons">check</i></td>
-              <td><i class="material-icons">check</i></td>
-            </tr>
-            <tr>
-              <th>Протоколы тестирования<br>RFM Тест</th>
-              <td><i class="material-icons">check</i><span>5</span></td>
-              <td><i class="material-icons">check</i><span>10</span></td>
-              <td><i class="material-icons">check</i><span>20</span></td>
-            </tr>
-            <tr>
-              <th>Консультация эксперта</th>
-              <td><i class="material-icons">close</i></td>
-              <td><i class="material-icons">close</i></td>
-              <td><i class="material-icons">check</i></td>
-            </tr>
-            <tr>
-              <th>Видеоуроки с техникой упражнений</th>
-              <td><i class="material-icons">close</i></td>
-              <td><i class="material-icons">check</i></td>
-              <td><i class="material-icons">check</i></td>
-            </tr>
-            <tr>
-              <th></th>
-              <td><a href="" class="b-button i-size-M">Купить</a></td>
-              <td><a href="" class="b-button i-size-M">Купить</a></td>
-              <td><a href="" class="b-button i-size-M">Купить</a></td>
-            </tr>
-          </tbody>
-        </table>
+      <hr class="i-size-M">
+      <!-- start /components/schedule/-->
+      <link rel="stylesheet" href="/components/schedule/style.css">
+      <script src="/components/schedule/script.js"></script>
+      <div class="b-schedule">
+        <h1>Расписание курсов фитнес обучения в 2018</h1>
+        <hr class="i-line">
+        <div class="b-schedule__filter"><a id="scheduleFilterLink" href="" class="b-schedule__filter-link"><span class="i-not-filtered">Показать только предстоящие курсы</span><span class="i-filtered hidden">Показать все курсы</span></a></div>
+        <div class="b-schedule__block">
+          <h2>Расписание курсов в январе</h2>
+          <div class="b-schedule__item i-filter"><a href="/schedule/item/" style="background-image: url(/upload/schedule/1.png);" class="b-schedule__img"></a>
+            <div class="b-schedule__text">
+              <h3><a href="/schedule/item/">Семинар «Тестирование осанки»</a></h3>
+              <p>Семинар, раскрывающий особенности изменений стопы в результате разных вариантов наклонов таза и разных видов </p>
+              <p>Курс для: персональных и групповых фитнес тренеров, йога-терапевтов, специалисты психосоматического направления, специалисты физической реабилитации</p>
+              <p class="b-schedule__time"><i style="background-image: url(/template/images/svg/schedule-time.png);"></i><span>21 час очно и 2 часа дистанционно</span></p>
+            </div>
+            <div class="b-schedule__date">
+              <div class="b-schedule__date-time">1-2 января</div>
+              <div class="b-schedule__date-price">
+                <h6>Стоимость</h6>15 000 руб.
+              </div>
+              <div class="b-schedule__date-social">
+                <h6>Отчеты в соц. сетях</h6>
+                <div class="b-schedule__date-icons"><a href="" target="_blank" style="background-image: url( '/template/images/svg/facebook.svg' );" class="b-social-icon"></a><a href="" target="_blank" style="background-image: url( '/template/images/footer/youtube.png' );" class="b-social-icon"></a><a href="" target="_blank" style="background-image: url( '/template/images/svg/vk.svg' );" class="b-social-icon"></a></div>
+              </div>
+            </div>
+          </div>
+          <hr class="i-size-S">
+          <div class="b-schedule__item i-soon"><a href="/schedule/item/" style="background-image: url(/upload/schedule/2.png);" class="b-schedule__img"></a>
+            <div class="b-schedule__text">
+              <h3><a href="/schedule/item/">Семинар «Тестирование осанки»</a></h3>
+              <p>Семинар, раскрывающий особенности изменений стопы в результате разных вариантов наклонов таза и разных видов </p>
+              <p>Курс для: персональных и групповых фитнес тренеров, йога-терапевтов, специалисты психосоматического направления, специалисты физической реабилитации</p>
+              <p class="b-schedule__time"><i style="background-image: url(/template/images/svg/schedule-time.png);"></i><span>21 час очно и 2 часа дистанционно</span></p>
+            </div>
+            <div class="b-schedule__date">
+              <div class="b-schedule__date-time">1-2 января<span>Осталось: 5 дней, 3 места</span></div>
+              <div class="b-schedule__date-price">
+                <h6>Стоимость</h6>15 000 руб.
+              </div>
+              <div class="b-schedule__date-button"><a href="" class="b-button i-size-M">Оплатить</a></div>
+            </div>
+          </div>
+        </div>
+        <hr class="i-size-M">
+        <div class="b-schedule__block">
+          <h2>Расписание курсов в феврале</h2>
+          <div class="b-schedule__item"><a href="/schedule/item/" style="background-image: url(/upload/schedule/3.png);" class="b-schedule__img"></a>
+            <div class="b-schedule__text">
+              <h3><a href="/schedule/item/">Семинар «Тестирование осанки»</a></h3>
+              <p>Семинар, раскрывающий особенности изменений стопы в результате разных вариантов наклонов таза и разных видов </p>
+              <p>Курс для: персональных и групповых фитнес тренеров, йога-терапевтов, специалисты психосоматического направления, специалисты физической реабилитации</p>
+              <p class="b-schedule__time"><i style="background-image: url(/template/images/svg/schedule-time.png);"></i><span>21 час очно и 2 часа дистанционно</span></p>
+            </div>
+            <div class="b-schedule__date">
+              <div class="b-schedule__date-warning">Внимание!<br>Даты обучения будут изменены.<br>Следите за расписанием.</div>
+              <div class="b-schedule__date-price">
+                <h6>Стоимость</h6>15 000 руб.
+              </div>
+              <div class="b-schedule__date-button"><a href="" class="b-button i-size-M">Записаться</a></div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- end /components/schedule/-->
     </div>
     <footer class="b-footer">
       <div class="container">

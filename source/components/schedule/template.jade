@@ -1,0 +1,106 @@
+﻿// start /components/schedule/
+
+link( rel="stylesheet", href="/components/schedule/style.css" )
+script( src="/components/schedule/script.js" )
+
+.b-schedule
+  
+  h1 Расписание курсов фитнес обучения в 2018
+  
+  hr.i-line
+  
+  .b-schedule__filter
+    a#scheduleFilterLink.b-schedule__filter-link( href="" )
+      span.i-not-filtered Показать только предстоящие курсы
+      span.i-filtered.hidden Показать все курсы
+      
+  .b-schedule__block
+  
+    h2 Расписание курсов в январе
+    
+    .b-schedule__item.i-filter
+    
+      a.b-schedule__img( href="/schedule/item/" style="background-image: url(/upload/schedule/1.png);" )
+      
+      .b-schedule__text
+        h3
+          a( href="/schedule/item/" ) Семинар «Тестирование осанки»
+        
+        p Семинар, раскрывающий особенности изменений стопы в результате разных вариантов наклонов таза и разных видов 
+        
+        p Курс для: персональных и групповых фитнес тренеров, йога-терапевтов, специалисты психосоматического направления, специалисты физической реабилитации
+        
+        p.b-schedule__time
+          i( style="background-image: url(/template/images/svg/schedule-time.png);" )
+          span 21 час очно и 2 часа дистанционно
+        
+      .b-schedule__date
+        .b-schedule__date-time 1-2 января
+        .b-schedule__date-price
+          h6 Стоимость
+          | 15 000 руб.
+        .b-schedule__date-social
+          h6 Отчеты в соц. сетях
+          .b-schedule__date-icons
+            a.b-social-icon( href="" target="_blank" style="background-image: url( '/template/images/svg/facebook.svg' );" )
+            a.b-social-icon( href="" target="_blank" style="background-image: url( '/template/images/footer/youtube.png' );" )
+            a.b-social-icon( href="" target="_blank" style="background-image: url( '/template/images/svg/vk.svg' );" )
+          
+    hr.i-size-S
+      
+    .b-schedule__item.i-soon
+    
+      a.b-schedule__img( href="/schedule/item/" style="background-image: url(/upload/schedule/2.png);" )
+      
+      .b-schedule__text
+        h3
+          a( href="/schedule/item/" ) Семинар «Тестирование осанки»
+        
+        p Семинар, раскрывающий особенности изменений стопы в результате разных вариантов наклонов таза и разных видов 
+        
+        p Курс для: персональных и групповых фитнес тренеров, йога-терапевтов, специалисты психосоматического направления, специалисты физической реабилитации
+        
+        p.b-schedule__time
+          i( style="background-image: url(/template/images/svg/schedule-time.png);" )
+          span 21 час очно и 2 часа дистанционно
+        
+      .b-schedule__date
+        .b-schedule__date-time 1-2 января
+          span Осталось: 5 дней, 3 места
+        .b-schedule__date-price
+          h6 Стоимость
+          | 15 000 руб.
+        .b-schedule__date-button
+          a.b-button.i-size-M( href="" ) Оплатить
+        
+  hr.i-size-M
+  
+  .b-schedule__block
+  
+    h2 Расписание курсов в феврале
+    
+    .b-schedule__item
+    
+      a.b-schedule__img( href="/schedule/item/" style="background-image: url(/upload/schedule/3.png);" )
+      
+      .b-schedule__text
+        h3
+          a( href="/schedule/item/" ) Семинар «Тестирование осанки»
+        
+        p Семинар, раскрывающий особенности изменений стопы в результате разных вариантов наклонов таза и разных видов 
+        
+        p Курс для: персональных и групповых фитнес тренеров, йога-терапевтов, специалисты психосоматического направления, специалисты физической реабилитации
+        
+        p.b-schedule__time
+          i( style="background-image: url(/template/images/svg/schedule-time.png);" )
+          span 21 час очно и 2 часа дистанционно
+        
+      .b-schedule__date
+        .b-schedule__date-warning Внимание!<br>Даты обучения будут изменены.<br>Следите за расписанием.
+        .b-schedule__date-price
+          h6 Стоимость
+          | 15 000 руб.
+        .b-schedule__date-button
+          a.b-button.i-size-M( href="" ) Записаться
+
+// end /components/schedule/

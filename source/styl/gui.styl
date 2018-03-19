@@ -2,7 +2,7 @@ body
   font-family "Open Sans", Arial, sans
   font-size 12pt
   line-height 1.7
-  background-color #f8f8f8
+  background-color #fff
   
 a
   color #004294
@@ -19,12 +19,12 @@ h1
   
 h2
   font-size 17pt
-  font-weight bold
+  font-weight normal
   margin 35px 0
     
 h3
   font-size 12pt
-  font-weight bold
+  font-weight normal
   margin 0 0 20px
   line-height 1.2
   
@@ -64,6 +64,9 @@ hr
       
   &__item
     margin-bottom 20px
+    
+  a
+    padding 0px
     
 .b-button
   height 70px
@@ -110,6 +113,17 @@ hr
       background-color #b5d96e
       color #fff
       
+  &.i-size-S
+    height 30px
+    line-height 30px
+    padding 0 24px
+    -webkit-border-radius 20px
+    -moz-border-radius 20px
+    border-radius 30px
+    background-color #9c3
+    font-size 9pt
+    margin-top 10px
+      
   .b-form-button &
     min-width 262px
     
@@ -131,8 +145,19 @@ ul li
 ol li
   margin-bottom 10px
   
+ol, ul
+  margin-bottom 40px
+  
+.small
+  ol, ul
+    margin-top 10px
+  
 .b-white-section
   background-color #fff
+  
+blockquote
+  border-left-color #88ad1d
+  font-size 12pt
   
 table.table
   font-size 10.5pt
@@ -149,9 +174,34 @@ table.table
       & > td
         border-bottom 1px solid #ddd
         
+.price
+  margin 22px
+        
 .input-field label
   font-weight normal
   color #333
+  
+.author_block
+
+  p
+    font-size 9pt
+    font-weight normal
+    margin-bottom 5px
+
+  h4
+    font-size 12pt
+    font-weight bold
+    margin-bottom 10px
+
+.col-sm-3 p
+  font-size 9pt
+  margin-bottom 10px
+
+.img-prev-block img
+  margin-bottom 20px
+  padding-right 20px
+  height 150px
+  align right
   
 input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly])
   border-bottom 1px solid #00419d
